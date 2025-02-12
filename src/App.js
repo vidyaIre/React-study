@@ -1,22 +1,27 @@
 import React from 'react';
 //import './App.css';
+import './App.css';
+import Banner from './components/Banner';
+import About from './components/About';
+import Button from './components/Button';
 
 function App() {
   return (
     <>
-    <div style ={{ display: "flex", justifyContent: "center"}}>
-      {/* <h1>Hi</h1> */}
-      <h1>Hello World</h1>
-    </div>
-    <div style ={{ display: "flex", justifyContent: "center"}}>
-    <h1>Hi</h1>
-    {/* <h1>Hello World</h1> */}
-  </div>
-  <div className="App">
-      <h1>Hello World2</h1>
-    </div>
-  </>
-    
+      <div style={{ 
+        marginTop: '20px 0',
+
+       }}>
+        <Banner />
+      </div>
+      <div>
+        <Button />
+      </div>
+      <div>
+        <About />
+      </div>
+    </>
+
   );
 }
 
